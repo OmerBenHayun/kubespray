@@ -28,7 +28,7 @@ cp -rfp inventory/sample inventory/mycluster
 * Update ansible
 Update Ansible inventory file with inventory builder (with local IP addresses)
 ```
-declare -a IPS=(10.10.1.3 10.10.1.4 10.10.1.5) #internal ip's change it to you internal ip address
+declare -a IPS=(10.243.64.6 10.243.64.9) #internal ip's change it to you internal ip addess (change if needed)
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 ```
 * change settings if neccery 
